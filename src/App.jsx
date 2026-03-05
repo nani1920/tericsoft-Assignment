@@ -21,7 +21,6 @@ function App() {
         throw new Error('Failed to summon characters. Power levels are too low!');
       }
       const data = await response.json();
-      // The API returns an items array
       setCharacters(data.items || []);
       setError(null);
     } catch (err) {

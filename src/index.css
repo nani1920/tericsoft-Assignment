@@ -1,6 +1,5 @@
 :root {
   --primary: #f97316;
-  /* DB Orange */
   --primary-hover: #ea580c;
   --bg: #0c0a09;
   --card-bg: #1c1917;
@@ -82,7 +81,7 @@ body {
   animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Animations */
+
 @keyframes fadeInDown {
   from {
     opacity: 0;
@@ -107,7 +106,7 @@ body {
   }
 }
 
-/* Skeleton/Loading State */
+
 .skeleton {
   background: linear-gradient(90deg, #1e293b 25%, #334155 50%, #1e293b 75%);
   background-size: 200% 100%;
