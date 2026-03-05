@@ -1,16 +1,73 @@
-# React + Vite
+# Dragon Ball Character Gallery 🐉
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, responsive React application that fetches data from the [Dragon Ball API](https://dragonball-api.com/) and displays character stats in a clean and neat UI.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Public API Integration**: Fetches character data (Name, Ki, Race, Image, etc.) dynamically.
+- **Premium Design**: Modern dark theme with orange/gold accents and smooth animations.
+- **Clean & Neat UI**: Optimized spacing, typography, and card layouts for a professional look.
+- **Loading & Error States**: Includes skeleton loaders and user-friendly error messages with retry functionality.
+- **Fully Responsive**: Optimized for all screen sizes (Mobile, Tablet, Desktop).
 
-## React Compiler
+## 🚀 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React**: Frontend framework.
+- **Vite**: Rapid development build tool.
+- **Vanilla CSS**: Custom design system for maximum performance and polish.
 
-## Expanding the ESLint configuration
+## 🛠️ Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) installed on your machine.
+- [Git](https://git-scm.com/) for cloning or pushing code.
+
+### Installation
+
+1. **Clone the repository** (if applicable):
+   ```bash
+   git clone https://github.com/nani1920/tericsoft-Assignment.git
+   ```
+
+2. **Navigate to the project directory**:
+   ```bash
+   cd tericsoft
+   ```
+
+3. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+4. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+
+The app will be available at `http://localhost:5173/`.
+
+## 📦 Project Structure
+
+```text
+tericsoft/
+├── src/
+│   ├── components/
+│   │   ├── CharacterCard.jsx   # Individual character display
+│   │   ├── CharacterList.jsx   # Grid of characters
+│   │   ├── ErrorMessage.jsx    # Error handling UI
+│   │   └── Loader.jsx           # Skeleton loading animation
+│   ├── App.jsx                 # Main logic & data fetching
+│   ├── index.css               # Global styles & design system
+│   └── App.css                 # Component-specific styles
+└── package.json
+```
+
+## 🌐 API Used
+
+- **Source**: [Dragon Ball API](https://dragonball-api.com/)
+- **Endpoint**: `https://dragonball-api.com/api/characters`
+
+---
+
+Built for the **Tericsoft React Assignment**.
